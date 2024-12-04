@@ -1,7 +1,7 @@
 const OrderConfirmation = () => {
     return (
       <main className="text-primary">
-        Sub-Category Page
+        Order Confirmation Page
       </main>
     );
   }

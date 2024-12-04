@@ -24,7 +24,10 @@ const Header = () => {
             <Link href="/checkout" aria-label="Proceed to Checkout" className="hover:text-gray-300">Checkout</Link>
           </li>
           <li>
-            <Link href="/orderhistory" aria-label="View Order History" className="hover:text-gray-300">Order History</Link>
+            <Link href="/order-confirmation" aria-label="View Order History" className="hover:text-gray-300">Order Confirmation</Link>
+          </li>
+          <li>
+            <Link href="/order-history" aria-label="View Order History" className="hover:text-gray-300">Order History</Link>
           </li>
         </ul>
       </div>

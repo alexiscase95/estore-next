@@ -2,22 +2,21 @@ import Link from "next/link";
 
 const Categories = () => {
     return (
-      <main className="text-primary">
-        Categories Page
+      <main className="text-primary">Categories Page
       <ul>
         <li>
           <Link href='/categories/cleaners'>
-          Cleaners
+          Cleaners 
           </Link>
         </li>
         <li>
           <Link href='/categories/floor-mats'>
-          Floor Mats
+          Floor Mats 
           </Link>
         </li>
         <li>
           <Link href='/categories/wipers'>
-          Wipers
+          Wipers 
           </Link>
         </li>
       </ul>  

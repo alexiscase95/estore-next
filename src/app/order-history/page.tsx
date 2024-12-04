@@ -1,6 +1,6 @@
 const OrderHistory = () => {
     return (
-      <main className="text-primary">OrderHistory Page</main>
+      <main className="text-primary">Order History Page</main>
     );
   }
   

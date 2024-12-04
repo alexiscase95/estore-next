@@ -4,8 +4,8 @@ import React from "react";
 const Header = () => {
   return (
     <header>
-    <nav className="bg-gray-100 text-black p-4">
-      <div className="max-w-full flex justify-between">
+    <nav className="bg-gray-100 p-4 text-black">
+      <div className="flex max-w-full justify-between">
         <div className="text-lg font-bold">Estore</div>
         <ul className="flex space-x-4">
           <li>

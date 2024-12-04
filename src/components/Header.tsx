@@ -15,7 +15,7 @@ const Header = () => {
             <Link href="/categories" aria-label="View Categories" className="hover:text-gray-300">Categories</Link>
           </li>
           <li>
-            <Link href="/product" aria-label="View Product" className="hover:text-gray-300">Product</Link>
+            <Link href="/product/wiper-blades" aria-label="View Product" className="hover:text-gray-300">Product</Link>
           </li>
           <li>
             <Link href="/cart" aria-label="View Cart" className="hover:text-gray-300">Cart</Link>

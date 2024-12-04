@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React from "react";
 
-import HeaderLogo from "./components/Logo";
+import HeaderLogo from "./sections/Logo";
 
 const Header = () => {
   return (

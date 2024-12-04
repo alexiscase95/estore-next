@@ -1,6 +1,6 @@
 const Search = () => {
     return (
-      <div className="text-primary">Search Page</div>
+      <main className="text-primary">Search Page</main>
     );
   }
   

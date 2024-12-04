@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <div className="text-primary">Root placeholder</div>
+    <main className="text-primary">Root placeholder</main>
   );
 }
 

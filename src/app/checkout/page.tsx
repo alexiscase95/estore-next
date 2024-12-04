@@ -1,6 +1,6 @@
 const Checkout = () => {
     return (
-      <div className="text-primary">Checkout Page</div>
+      <main className="text-primary">Checkout Page</main>
     );
   }
   

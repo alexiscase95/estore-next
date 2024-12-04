@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import React from "react";
+
+import Header from "../components/Header";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -14,22 +16,22 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-// Metadata based on the selected theme
-const theme = process.env.THEME || 'chevrolet';  
+// Define different metadata configurations for each theme
+const theme = process.env.THEME || 'chevrolet';
 
 const themeMetadata: Record<string, Metadata> = {
   chevrolet: {
     title: "Chevrolet Estore",
     description: "Welcome to the official Chevrolet Estore",
     icons: {
-      icon: "/favicon-chevrolet.ico", 
+      icon: "/favicon-chevrolet.ico",
     },
   },
   gmc: {
     title: "GMC Estore",
     description: "Explore the latest from GMC Estore",
     icons: {
-      icon: "/favicon-gmc.ico", 
+      icon: "/favicon-gmc.ico",
     },
   },
 };
@@ -44,7 +46,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {children}
+        <Header /> 
+        <main>{children}</main>
       </body>
     </html>
   );

@@ -1,12 +1,16 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
+
+import HeaderLogo from "./components/Logo";
 
 const Header = () => {
   return (
     <header>
-    <nav className="bg-gray-100 p-4 text-black">
+    <nav aria-label="Main navigation" className="bg-gray-100 p-4 text-black">
       <div className="flex max-w-full justify-between">
-        <div className="text-lg font-bold">Estore</div>
+        <HeaderLogo />
         <ul className="flex space-x-4">
           <li>
             <Link href="/" aria-label="Go to Home" className="hover:text-gray-300">Home</Link>

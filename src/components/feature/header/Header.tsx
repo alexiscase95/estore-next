@@ -3,14 +3,18 @@
 import Link from "next/link";
 import React from "react";
 
-import HeaderLogo from "./sections/Logo";
+import Logo from "./sections/Logo";
+import MiniCart from "./sections/MiniCart";
+import MyAccountDropDown from "./sections/MyAccountDropDown";
+import SupportLink from "./sections/SupportLink";
+import UserLocation from "./sections/UserLocation";
 
 const Header = () => {
   return (
     <header>
-    <nav aria-label="Main navigation" className="bg-gray-100 p-4 text-black">
-      <div className="flex max-w-full justify-between">
-        <HeaderLogo />
+    <nav aria-label="Main navigation" className="flex bg-gray-100 p-4 text-black justify-between">
+      <div className="flex-row">
+        <Logo />
         <ul className="flex space-x-4">
           <li>
             <Link href="/" aria-label="Go to Home" className="hover:text-gray-300">Home</Link>
@@ -35,9 +39,18 @@ const Header = () => {
           </li>
         </ul>
       </div>
+      <div className="flex-col">
+        <div className="flex gap-4">
+          <SupportLink />
+          <UserLocation />
+        </div>
+        <div className="flex">
+        <MyAccountDropDown />
+        <MiniCart />
+        </div>
+      </div>
     </nav>
   </header>
-  
   );
 };
 

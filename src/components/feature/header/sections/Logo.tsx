@@ -9,7 +9,7 @@ import Link from 'next/link';
  */
 
 const HeaderLogo = () => (
-  <section id="header-logo-section">
+  <section id="header-logo-section" className="flex">
       <Link
         data-dtm="global nav"
         href="/"
